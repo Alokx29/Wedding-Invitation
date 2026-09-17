@@ -2560,6 +2560,7 @@
         #ft3 .hi {
             font-size: clamp(1.55rem, 6vw, 2.25rem) !important;
             line-height: 1.15 !important;
+            margin-top: 14px !important;
             color: #ffffff !important;
         }
 
@@ -2618,6 +2619,51 @@
             #opening .inv-title {
                 font-size: clamp(2.0rem, 3.1vw, 2.55rem) !important;
                 letter-spacing: -.025em !important;
+            }
+        }
+
+        /* =========================================================
+           FINAL TYPOGRAPHY SPACING FIX — only requested spacing
+           1) Clear space around the & symbol
+           2) More breathing room between the small label and name
+           3) More breathing room between name and the next line
+           ========================================================= */
+        #hero .hero-copy h1 span {
+            margin-left: .22em;
+            margin-right: .22em;
+        }
+
+        #hero .hero-copy .label {
+            margin-bottom: 18px;
+        }
+
+        #hero .hero-copy .goldline {
+            margin-top: 27px;
+        }
+
+        .opening-card .inv-title {
+            margin-top: 8px;
+        }
+
+        .opening-card .inv-sub {
+            margin-top: 16px;
+        }
+
+        @media (max-width: 600px) {
+            #hero .hero-copy .label {
+                margin-bottom: 16px;
+            }
+
+            #hero .hero-copy .goldline {
+                margin-top: 23px;
+            }
+
+            .opening-card .inv-title {
+                margin-top: 6px;
+            }
+
+            .opening-card .inv-sub {
+                margin-top: 14px;
             }
         }
     </style>
@@ -2730,7 +2776,7 @@
             <div class="hero-copy"><img alt="Ganesha blessing" class="hero-god reveal"
                     src="https://i.pinimg.com/736x/3d/9e/87/3d9e877a2872b90725ed1e0408562cf1.jpg" />
                 <div class="label reveal">शुभ विवाह · A Wedding Celebration</div>
-                <h1 class="reveal">Kishan<span>&amp;</span>Anjali</h1>
+                <h1 class="reveal">Kishan <span>&amp;</span> Anjali</h1>
                 <div class="goldline reveal"></div>
                 <div class="hero-date reveal">बुधवार, 02 दिसम्बर 2026</div>
                 <div class="hero-venue reveal">
