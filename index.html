@@ -471,20 +471,6 @@
       background: var(--gold2)
     }
 
-    .skip {
-      position: absolute;
-      right: 20px;
-      bottom: 35px;
-      z-index: 130;
-      border: 1px solid rgba(248, 239, 217, .25);
-      background: rgba(0, 0, 0, .2);
-      color: rgba(248, 239, 217, .7);
-      padding: 9px 14px;
-      font: 400 .58rem "DM Sans", sans-serif;
-      letter-spacing: .16em;
-      text-transform: uppercase
-    }
-
     /* =========================================================
    MAIN WEBSITE = actual wedding website
    ========================================================= */
@@ -2496,7 +2482,7 @@
       style="left:64%;animation-delay:-3s;animation-duration:9s"></span><span class="petal"
       style="left:84%;animation-delay:-6s"></span>
     <div class="gold-wash" id="goldWash"></div>
-    <div class="progress"><i id="progressBar"></i></div><button class="skip" id="skip">Skip</button>
+    <div class="progress"><i id="progressBar"></i></div>
   </div>
   <!-- =====================================================
        3. MAIN WEDDING WEBSITE
@@ -2936,7 +2922,7 @@
       // =========================================================
       function revealSite() { playing = false; cinema.classList.remove('active'); cinema.setAttribute('aria-hidden', 'true'); site.style.display = 'block'; gsap.to(site, { opacity: 1, duration: 1.05, onComplete: initSite }) }
       // Open button aur Skip button ke clicks
-      openBtn.addEventListener('click', startFilm); $('#skip').addEventListener('click', async () => { await startWebsiteMusic(); if (tl) tl.kill(); gsap.set('#goldWash', { opacity: 1, scale: 1.5 }); revealSite(); });
+      openBtn.addEventListener('click', startFilm);
       // =========================================================
       // 5. MAIN WEBSITE START
       // Scroll animations, navbar, countdown, RSVP aur gallery yahan setup hote hain.
